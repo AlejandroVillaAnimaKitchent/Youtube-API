@@ -24,8 +24,13 @@ from datetime import datetime as dt
 ###############################################################################################
 
 ###################################### AUTH & SCOPES ##########################################
-CLIENT_SECRETS_FILE = 'client_secret_anima.json'
 
+######################################
+CLIENT_SECRETS_FILE = 'client_secret_anima.json'
+######################################
+
+#For YT API
+######################################
 SCOPES = [
            'https://www.googleapis.com/auth/youtube',                                # Thumb  
            'https://www.googleapis.com/auth/youtubepartner-content-owner-readonly',  # ContentID  
@@ -33,14 +38,19 @@ SCOPES = [
            'https://www.googleapis.com/auth/youtube.force-ssl',                      # Programar
           'https://www.googleapis.com/auth/youtube.readonly']                       # Ver livestreams activos
 
+API_SERVICE_NAME = 'youtube'
+API_VERSION = 'v3'
+######################################
+
+#For YT Partners API 
+######################################
 SCOPES_PARTNER = [
           'https://www.googleapis.com/auth/youtubepartner',                         # ? 
           'https://www.googleapis.com/auth/youtube.readonly']                       # Ver livestreams activos
 
-API_SERVICE_NAME = 'youtube'
-API_VERSION = 'v3'
 API_SERVICE_NAME_PARTNER = 'youtubePartner'
 API_VERSION_PARTNER = 'v1'
+######################################
 
 ###############################################################################################
 
